@@ -16,9 +16,12 @@ public class divisors {
 
         // but we can solve in O(sqrt(n));
 
-        for(int i=1;i*i==n;i++){
+        for(int i=1;i*i<=n;i++){
             if(n%i==0){
-                System.out.print(i+" "+n/i+" ");
+                System.out.print(i+" ");
+                if(n/i != i){
+                    System.out.print(n/i+" ");
+                }
             }
 
         }
