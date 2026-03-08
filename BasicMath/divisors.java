@@ -7,13 +7,23 @@ public class divisors {
         int n= sc.nextInt();
         System.out.println("Divisors: ");
 
-        for(int i=1;i<=n;i++){
-            if(n%i==0){
-                System.out.print(i+" ");
-            }
-        }
-        sc.close();
+        // for(int i=1;i<=n;i++){
+        //     if(n%i==0){
+        //         System.out.print(i+" ");
+        //     }
+        // }
+        // this has complexity O(n);
 
+        // but we can solve in O(sqrt(n));
+
+        for(int i=1;i*i==n;i++){
+            if(n%i==0){
+                System.out.print(i+" "+n/i+" ");
+            }
+
+        }
+
+        sc.close();
     }
     
 }
