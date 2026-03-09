@@ -13,7 +13,7 @@ public class PrintNto1 {
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter the number: ");
         int n= sc.nextInt();
-        int i=n;
+       
         System.out.println("output:");
         Nto1(n);
         
