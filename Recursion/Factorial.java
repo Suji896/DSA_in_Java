@@ -1,4 +1,4 @@
-package Reccursion;
+package Recursion;
 import java.util.Scanner;
 public class Factorial {
     static int fact(int n){

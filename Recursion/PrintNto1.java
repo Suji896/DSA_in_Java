@@ -1,4 +1,4 @@
-package Reccursion;
+package Recursion;
 import java.util.Scanner;
 public class PrintNto1 {
     static void Nto1(int a){
