@@ -3,17 +3,24 @@ package Arrays;
 public class secondLargest {
     public static void main(String[] args) {
         int [] arr= {2,3,7,9,5,8};
+        // int arr[]={5,5,5,5,5};
 
-        for(int j=0;j<arr.length;j++){
-            for(int i=0;i<arr.length-1;i++){
-                if(arr[i]>arr[i+1]){
-                    int temp= arr[i];
-                    arr[i]=arr[i+1];
-                    arr[i+1]=temp;
-                }
+        int lar=arr[0];
+        int slar=arr[0];
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]>lar){
+                slar=lar;
+                lar=arr[i];  
+            }
+            else if(arr[i]>slar && arr[i]!=lar){
+                slar=arr[i];
             }
         }
-
-        System.out.println("second Largest: "+arr[arr.length-2]);
+        if(slar==lar){
+            System.out.print("Second largest Not found");
+        }
+        else{
+        System.out.println("second Largest: "+slar);
+        }
     }
 }
