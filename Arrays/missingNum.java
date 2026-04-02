@@ -18,13 +18,13 @@ public class missingNum{
 
         // XOR method
         int x1=0;
-        for(int i=1;i<=n;i++){
-            x1=x1^i;
-        }
+        
         int x2=0;
-        for (int val : arr) {
-            x2=x2^val;
+        for (int i=0;i<n-1;i++) {
+            x2=x2^arr[i];
+            x1=x1^(i+1);
         }
+        x1=x1^n;
         int num= x1^x2;
         System.out.println("The missing number is: "+num);
     }
