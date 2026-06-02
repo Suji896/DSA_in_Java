@@ -12,6 +12,7 @@ public class largestDigit {
             n=n/10;
             
         }
+        sc.close();
     }
     
 }
